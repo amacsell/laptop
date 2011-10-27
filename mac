@@ -40,6 +40,9 @@ echo "Installing ImageMagick, good for cropping and re-sizing images ..."
 echo "Installing git ..."
   brew install git
 
+echo "Installing node js ..."
+  brew install node
+
 echo "Installing rbenv ..."
   brew install rbenv
   echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
