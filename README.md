@@ -34,6 +34,8 @@ What it sets up
 * Redis (for storing key-value data)
 * Memcached (for caching objects)
 * ImageMagick (for cropping and resizing images)
+* Node JS (for awesomeness.  And being cool)
+* Node Package Manager (for managing the awesomeness)
 * rbenv (for managing versions of the Ruby programming language)
 * Ruby 1.9.2 stable (for writing general-purpose code)
 * Ruby 1.9.3-rc1 (for writing awesome code)
