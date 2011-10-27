@@ -29,17 +29,15 @@ What it sets up
 
 * SSH public keys (for authenticating with services like Github and Heroku)
 * Homebrew or apt-get (for managing operating system libraries)
-* Ack (for finding things in files)
-* Tmux (for saving project state and switching between projects)
+* Mysql (for storing relational data)
 * Postgres (for storing relational data)
 * Redis (for storing key-value data)
+* Memcached (for caching objects)
 * ImageMagick (for cropping and resizing images)
-* RVM (for managing versions of the Ruby programming language)
+* rbenv (for managing versions of the Ruby programming language)
 * Ruby 1.9.2 stable (for writing general-purpose code)
+* Ruby 1.9.3-rc1 (for writing awesome code)
 * Bundler gem (for managing Ruby libraries)
 * Rails gem (for writing web applications)
-* Heroku gem (for interacting with the Heroku API)
-* Taps gem (for pushing and pulling SQL databases between environments)
-* Postgres gem (for making Ruby talk to SQL databases)
 
 It should take about 30 minutes for everything to install, depending on your machine.
