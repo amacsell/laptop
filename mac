@@ -20,23 +20,36 @@ export PATH='/usr/local/bin:$PATH'" >> ~/.zshrc
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
 
+echo "Installing Mysql"
+  brew install mysql
+  mysql_install_db
+  launchctl load -w /usr/local/Cellar/mysql/5.1.43/com.mysql.mysqld.plist
+
 echo "Installing Redis, a good key-value database ..."
   brew install redis
 
-echo "Installing ack, a good way to search through files ..."
-  brew install ack
+echo "Installing mongodb ..."
+  brew install mongodb
 
-echo "Installing tmux, a good way to save project state and switch between projects ..."
-  brew install tmux
+echo "Installing memcached ..."
+  brew install memcached
 
 echo "Installing ImageMagick, good for cropping and re-sizing images ..."
   brew install imagemagick
 
-echo "Installing RVM (Ruby Version Manager) ..."
-  curl -s https://rvm.beginrescueend.com/install/rvm -o rvm-installer ; chmod +x rvm-installer ; ./rvm-installer --version latest
-  echo "
-# RVM
-[[ -s '/Users/`whoami`/.rvm/scripts/rvm' ]] && source '/Users/`whoami`/.rvm/scripts/rvm'" >> ~/.zshrc
-  source ~/.zshrc
+echo "Installing git ..."
+  brew install git
 
-bash < <(curl -s https://raw.github.com/thoughtbot/laptop/master/ruby)
+echo "Installing rbenv ..."
+  brew install rbenv
+  echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+  source ~/.bash_profile
+
+
+echo "Installing ruby-build"
+  brew install ruby-build
+
+
+echo 
+
+bash < <(curl -s https://raw.github.com/ready4god2513/laptop/master/ruby)
