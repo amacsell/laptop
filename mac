@@ -17,11 +17,6 @@ echo "Put Homebrew location earlier in PATH ..."
 export PATH='/usr/local/bin:$PATH'" >> ~/.zshrc
   source ~/.zshrc
 
-echo "Installing Mysql"
-  brew install mysql
-  mysql_install_db
-  launchctl load -w /usr/local/Cellar/mysql/5.1.43/com.mysql.mysqld.plist
-
 echo "Installing ImageMagick, good for cropping and re-sizing images ..."
   brew install imagemagick
 
