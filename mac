@@ -23,6 +23,9 @@ echo "Installing ImageMagick, good for cropping and re-sizing images ..."
 echo "Installing git ..."
   brew install git
 
+echo "Installing mysql ..."
+  brew install mysql
+
 echo "Installing node js ..."
   brew install node
 
