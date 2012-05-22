@@ -32,19 +32,9 @@ echo "Installing node js ..."
 echo "Installing npm ..."
   curl http://npmjs.org/install.sh | clean=yes sh
 
-echo "Installing rbenv ..."
-  brew install rbenv
-  echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-  source ~/.bash_profile
-
-
-echo "Installing ruby-build"
-  brew install ruby-build
-
-echo "Now hacking all of Eric's passwords and backing them up to a remote server."
-echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in consequat eros. Donec vel dui purus, a feugiat erat. Phasellus eu nulla ipsum. Proin egestas velit sed purus sodales consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam faucibus facilisis suscipit. Curabitur velit mi, mollis sit amet faucibus non, aliquet eget dui. Aenean ut neque in metus ultrices vulputate non in nibh. Donec elit elit, pellentesque at ultrices ac, tincidunt et neque. Fusce fringilla nunc ut ipsum tempor varius. Donec hendrerit lacinia fringilla. Etiam in purus nulla, sit amet tincidunt elit. Duis aliquam varius nisi, in rhoncus orci pulvinar volutpat. Curabitur pulvinar euismod turpis, ut condimentum enim varius congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in consequat eros. Donec vel dui purus, a feugiat erat. Phasellus eu nulla ipsum. Proin egestas velit sed purus sodales consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam faucibus facilisis suscipit. Curabitur velit mi, mollis sit amet faucibus non, aliquet eget dui. Aenean ut neque in metus ultrices vulputate non in nibh. Donec elit elit, pellentesque at ultrices ac, tincidunt et neque. Fusce fringilla nunc ut ipsum tempor varius. Donec hendrerit lacinia fringilla. Etiam in purus nulla, sit amet tincidunt elit. Duis aliquam varius nisi, in rhoncus orci pulvinar volutpat. Curabitur pulvinar euismod turpis, ut condimentum enim varius congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in consequat eros. Donec vel dui purus, a feugiat erat. Phasellus eu nulla ipsum. Proin egestas velit sed purus sodales consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam faucibus facilisis suscipit. Curabitur velit mi, mollis sit amet faucibus non, aliquet eget dui. Aenean ut neque in metus ultrices vulputate non in nibh. Donec elit elit, pellentesque at ultrices ac, tincidunt et neque. Fusce fringilla nunc ut ipsum tempor varius. Donec hendrerit lacinia fringilla. Etiam in purus nulla, sit amet tincidunt elit. Duis aliquam varius nisi, in rhoncus orci pulvinar volutpat. Curabitur pulvinar euismod turpis, ut condimentum enim varius congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in consequat eros. Donec vel dui purus, a feugiat erat. Phasellus eu nulla ipsum. Proin egestas velit sed purus sodales consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam faucibus facilisis suscipit. Curabitur velit mi, mollis sit amet faucibus non, aliquet eget dui. Aenean ut neque in metus ultrices vulputate non in nibh. Donec elit elit, pellentesque at ultrices ac, tincidunt et neque. Fusce fringilla nunc ut ipsum tempor varius. Donec hendrerit lacinia fringilla. Etiam in purus nulla, sit amet tincidunt elit. Duis aliquam varius nisi, in rhoncus orci pulvinar volutpat. Curabitur pulvinar euismod turpis, ut condimentum enim varius congue."
-
-
-echo 
-
-bash < <(curl -s https://raw.github.com/ready4god2513/laptop/master/ruby)
+echo "Installing rvm ..."
+  curl -L get.rvm.io | bash -s stable
+  source ~/.rvm/scripts/rvm
+  
+echo "Installing ruby 1.9.3"
+  rvm install 1.9.3
